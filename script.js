@@ -60,21 +60,24 @@ let film = {
 4. Add a property "boxoffice" with a value of 269061 to the "film" object. Return "film".
 */
 function addBoxOffice(){
-    film.boxoffice
+    film.boxoffice = 269061;
+    return film;
 }
 
 /*
 5. Add the name "Yukiko Shimazaki" to the "actors" array. Return "film";
 */
 function addActor(){
-    // Your answer here:
+    film.actors.push( "Yukiko Shimazaki" )
+    return film;
 }
 
 /*
 6. Now that you've added a "boxoffice" property, subtract "budget" from "property" and return the difference. This number is the amount lost by the studio in making the film. Return the loss.
 */
 function getLosses(){
-    // Your answer here:
+    let losses = film.boxoffice - film.budget;
+    return losses;
 }
 
 
